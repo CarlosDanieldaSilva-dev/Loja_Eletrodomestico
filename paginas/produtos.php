@@ -106,7 +106,7 @@ if ($pesquisa !== '') {
                 <div class="card card-produto">
 
                     <img
-                        src="/devmoderna/projeto/imagens/<?= htmlspecialchars($produto['imagem']) ?>"
+                        src="imagens/<?= htmlspecialchars($produto['imagem']) ?>"
                         class="imagem-produto"
                         alt="<?= htmlspecialchars($produto['nome']) ?>"
                     >
