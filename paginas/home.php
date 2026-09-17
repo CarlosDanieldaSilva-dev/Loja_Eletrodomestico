@@ -21,7 +21,7 @@ $resultado = $conexao->query($sql);
                 <div class="card h-100">
 
                     <img
-                        src="imagens/<?= htmlspecialchars($produto['imagem']) ?>"
+                        src="/imagens/<?= htmlspecialchars($produto['imagem']) ?>"
                         class="card-img-top imagem-produto"
                         alt="<?= $produto['nome'] ?>"
                     >
