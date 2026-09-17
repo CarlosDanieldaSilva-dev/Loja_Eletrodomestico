@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Eletrodomésticos</title>
 
-    <base href="http://localhost:8080/devmoderna/projeto/">
+    <base href="/">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -57,7 +57,7 @@ session_start();
 
         error_reporting(E_ALL);
         ini_set('display_errors', 1);
-        
+
         if (isset($_GET["param"])) {
             $p = explode("/", $_GET["param"]);
         }
