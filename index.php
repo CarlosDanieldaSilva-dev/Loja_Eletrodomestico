@@ -17,7 +17,7 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="short cut icon" href="imagens/iconeprojeto.png">
-    
+
 </head>
 
 <body>
@@ -54,20 +54,24 @@ session_start();
 
     <main>
         <?php
-            if(isset($_GET["param"])){
-                $p = explode("/", $_GET["param"]);
-            }
 
-            $page = $p[0] ?? "home";
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+        
+        if (isset($_GET["param"])) {
+            $p = explode("/", $_GET["param"]);
+        }
 
-            $pagina = "paginas/{$page}.php";
+        $page = $p[0] ?? "home";
 
-            //verificar se o arquivo existe
-            if(file_exists($pagina)) {
-                include $pagina;
-            } else{
-                include "paginas/erro.php";
-            }
+        $pagina = "paginas/{$page}.php";
+
+        //verificar se o arquivo existe
+        if (file_exists($pagina)) {
+            include $pagina;
+        } else {
+            include "paginas/erro.php";
+        }
         ?>
 
     </main>
