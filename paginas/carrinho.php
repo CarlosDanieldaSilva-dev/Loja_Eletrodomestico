@@ -85,7 +85,7 @@ $total = calcularTotalCarrinho($carrinho);
                                 <div class="d-flex align-items-center gap-3">
 
                                     <img
-                                        src="/devmoderna/projeto/imagens/<?= htmlspecialchars($item['imagem']) ?>"
+                                        src="/imagens/<?= htmlspecialchars($item['imagem']) ?>"
                                         alt="<?= htmlspecialchars($item['nome']) ?>"
                                         style="width: 80px; height: 80px; object-fit: contain;"
                                     >
